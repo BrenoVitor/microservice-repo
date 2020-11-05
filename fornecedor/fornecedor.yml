@@ -1,8 +1,10 @@
 spring:
+  driverClassName: 'org.h2.Driver'
   datasource:
-    password: root
-    username: root
-    url: 'jdbc:mysql://localhost:3307/fornecedor'
+    password: password
+    username: sa
+    url: 'jdbc:h2:mem:fornecedor'
   jpa:
+    database-platform: 'org.hibernate.dialect.H2Dialect'
     hibernate:
       ddl-auto: update
